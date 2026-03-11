@@ -1,13 +1,14 @@
 body {
-    background-color: #; 
+    background-color:blue; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: # ; 
+    color:black; 
     text-align: center;
 }
 
 img {
     box-shadow: 0px 4px 10px gray;
 }
+
 
 
 
