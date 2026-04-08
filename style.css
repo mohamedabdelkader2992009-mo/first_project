@@ -2,80 +2,89 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
 }
 
 body {
-    background: #0b0b0b;
+    height: 100vh;
+}
+
+/* الخلفية */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1605559424843-9e4c2281c7e5") center/cover no-repeat;
+}
+
+/* طبقة غامقة */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, black 40%, rgba(0,0,0,0.2));
+}
+
+/* العنوان */
+.content {
+    position: absolute;
+    top: 30%;
+    left: 8%;
     color: white;
 }
 
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(black, #111);
-}
-
-.hero h1 {
-    font-size: 50px;
+.content h1 {
+    font-size: 60px;
     color: #ff1e1e;
 }
 
-.hero p {
+.content p {
     margin-top: 10px;
-    color: #aaa;
+    font-size: 20px;
+    color: #ccc;
 }
 
-/* Bike Section */
-.bike {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 50px;
-    flex-wrap: wrap;
-}
-
-.image img {
-    width: 400px;
+/* الكارد */
+.card {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(20,20,20,0.9);
+    padding: 30px;
+    width: 300px;
     border-radius: 20px;
+    backdrop-filter: blur(10px);
     box-shadow: 0 0 30px rgba(255,0,0,0.3);
 }
 
-/* Info */
-.info {
-    max-width: 400px;
-}
-
-.info h2 {
-    font-size: 35px;
+.card h2 {
     margin-bottom: 20px;
     color: #ff1e1e;
 }
 
-.info ul {
-    list-style: none;
+.spec {
+    margin-bottom: 15px;
 }
 
-.info li {
-    margin: 10px 0;
+.spec span {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.spec p {
     font-size: 18px;
 }
 
-.info span {
-    color: #ff1e1e;
-    font-weight: bold;
-}
-
-/* Button */
+/* زر */
 button {
-    margin-top: 20px;
-    padding: 12px 25px;
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
     background: #ff1e1e;
     border: none;
+    border-radius: 10px;
     color: white;
     cursor: pointer;
-    border-radius: 10px;
     transition: 0.3s;
 }
 
@@ -83,5 +92,3 @@ button:hover {
     background: white;
     color: black;
 }
-
-
