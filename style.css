@@ -5,90 +5,48 @@
     font-family: Arial;
 }
 
-body {
+.split {
+    display: flex;
     height: 100vh;
 }
 
-/* الخلفية */
-.hero {
-    position: relative;
-    height: 100vh;
-    background: url("https://images.unsplash.com/photo-1605559424843-9e4c2281c7e5") center/cover no-repeat;
+.left {
+    width: 50%;
 }
 
-/* طبقة غامقة */
-.overlay {
-    position: absolute;
+.left img {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, black 40%, rgba(0,0,0,0.2));
+    object-fit: cover;
 }
 
-/* العنوان */
-.content {
-    position: absolute;
-    top: 30%;
-    left: 8%;
+.right {
+    width: 50%;
+    background: #0a0a0a;
     color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.content h1 {
-    font-size: 60px;
-    color: #ff1e1e;
+.right h1 {
+    font-size: 50px;
+    color: red;
 }
 
-.content p {
-    margin-top: 10px;
-    font-size: 20px;
+.right p {
+    margin: 20px 0;
     color: #ccc;
 }
 
-/* الكارد */
-.card {
-    position: absolute;
-    right: 8%;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(20,20,20,0.9);
-    padding: 30px;
-    width: 300px;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 30px rgba(255,0,0,0.3);
-}
-
-.card h2 {
+.right ul {
     margin-bottom: 20px;
-    color: #ff1e1e;
 }
 
-.spec {
-    margin-bottom: 15px;
-}
-
-.spec span {
-    font-size: 14px;
-    color: #aaa;
-}
-
-.spec p {
-    font-size: 18px;
-}
-
-/* زر */
 button {
-    margin-top: 15px;
-    width: 100%;
     padding: 12px;
-    background: #ff1e1e;
+    background: red;
     border: none;
-    border-radius: 10px;
     color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: white;
-    color: black;
 }
