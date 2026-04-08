@@ -5,48 +5,49 @@
     font-family: Arial;
 }
 
-.split {
+body {
+    background: #0b0b0b;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
-.left {
-    width: 50%;
+/* الكارت */
+.container {
+    width: 600px;
+    background: #111;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(255,0,0,0.2);
+    transition: 0.3s;
 }
 
-.left img {
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* الصورة */
+.image img {
     width: 100%;
-    height: 100%;
+    height: 300px;
     object-fit: cover;
 }
 
-.right {
-    width: 50%;
-    background: #0a0a0a;
-    color: white;
-    padding: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* النص */
+.text {
+    padding: 25px;
+    text-align: center;
 }
 
-.right h1 {
-    font-size: 50px;
-    color: red;
+.text h1 {
+    font-size: 28px;
+    color: #ff1e1e;
+    margin-bottom: 10px;
 }
 
-.right p {
-    margin: 20px 0;
+.text p {
+    font-size: 16px;
     color: #ccc;
-}
-
-.right ul {
-    margin-bottom: 20px;
-}
-
-button {
-    padding: 12px;
-    background: red;
-    border: none;
-    color: white;
+    line-height: 1.6;
 }
