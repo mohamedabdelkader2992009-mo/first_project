@@ -1,15 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-    background-color:#d6e093; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:black; 
+    background: #0b0b0b;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
     text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(black, #111);
 }
 
-img {
-    box-shadow: 0px 4px 10px gray;
+.hero h1 {
+    font-size: 50px;
+    color: #ff1e1e;
 }
 
+.hero p {
+    margin-top: 10px;
+    color: #aaa;
+}
 
+/* Bike Section */
+.bike {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    flex-wrap: wrap;
+}
 
+.image img {
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255,0,0,0.3);
+}
+
+/* Info */
+.info {
+    max-width: 400px;
+}
+
+.info h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #ff1e1e;
+}
+
+.info ul {
+    list-style: none;
+}
+
+.info li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.info span {
+    color: #ff1e1e;
+    font-weight: bold;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff1e1e;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
 
 
