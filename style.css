@@ -1,38 +1,35 @@
 body {
     margin: 0;
-    padding: 0;
     background: #000;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     color: white;
 }
 
 .container {
     text-align: center;
-    padding: 40px;
+    padding: 30px;
 }
 
-.title {
-    font-size: 40px;
+h1 {
+    font-size: 35px;
     margin-bottom: 20px;
-    letter-spacing: 2px;
 }
 
 .card {
-    background: #111;
     width: 70%;
     margin: auto;
+    background: #111;
     padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    border-radius: 15px;
 }
 
 .card img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
-.desc {
+.card p {
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
 }
