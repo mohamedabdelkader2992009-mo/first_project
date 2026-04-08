@@ -1,35 +1,19 @@
 body {
-    margin: 0;
-    background: #000;
-    font-family: Arial;
-    color: white;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px;
 }
 
-.container {
-    text-align: center;
-    padding: 30px;
+img {
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(255,255,255,0.2);
 }
 
-h1 {
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-
-.card {
-    width: 70%;
-    margin: auto;
-    background: #111;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.card p {
-    margin-top: 15px;
-    font-size: 16px;
-    line-height: 1.6;
+.details {
+  text-align: left;
+  max-width: 400px;
+  margin: 20px auto 0 auto;
+  line-height: 1.6;
 }
